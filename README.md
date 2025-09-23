@@ -1,107 +1,78 @@
-# SuperTrunfo
-Criando as Cartas do Super Trunfo
+# Super Trunfo em C 🃏
+
+Este projeto é uma versão simplificada do jogo **Super Trunfo**, implementada em linguagem **C**.  
+O objetivo é comparar atributos de duas cartas de países para decidir qual vence em determinada categoria.
+
+---
+
+## 🚀 Como compilar e executar
+
+1. Certifique-se de ter o compilador `gcc` instalado.
+2. Clone este repositório ou baixe os arquivos.
+3. No terminal, execute:
+
+```bash
+gcc super_trunfo.c -o super_trunfo
+./super_trunfo
+
+📖 Como jogar
+
+Cadastre as duas cartas fornecendo os atributos:
+
+Estado
+
+Código
+
+Cidade
+
+População
+
+Área (Km²)
+
+PIB (em bilhões de reais)
+
+Pontos turísticos
+
+Após o cadastro, será exibido um menu interativo:
+
+Escolha o atributo para comparar:
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos Turísticos
+5 - Densidade Demográfica (menor vence)
+6 - PIB per capita
+7 - Super Poder
 
 
-Neste primeiro nível, seu objetivo é construir a base do nosso jogo Super Trunfo de Países: um sistema para cadastrar as cartas com informações sobre as cidades. Você vai praticar a leitura de dados do usuário, o armazenamento em variáveis e a exibição dessas informações na tela.
+Digite o número da opção e pressione Enter.
 
+O programa exibirá:
 
-O que você vai fazer
+O nome dos dois países
 
+Os valores dos atributos escolhidos
 
-Criar um programa em C que permita ao usuário inserir os dados de duas cartas do Super Trunfo. Para cada carta, o usuário deverá fornecer as seguintes informações:
+O resultado da comparação (quem venceu ou se houve empate)
 
- 
+🏆 Regras de comparação
 
-Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
- 
-Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
- 
-Nome da Cidade: O nome da cidade. Tipo: char[] (string)
- 
-População: O número de habitantes da cidade. Tipo: int
- 
-Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
- 
-PIB: O Produto Interno Bruto da cidade. Tipo: float
- 
-Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
- 
+População, Área, PIB, Pontos Turísticos, PIB per capita, Super Poder
+→ vence o maior valor.
 
-Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível. Para cada carta, imprima cada informação em uma linha separada, com uma descrição clara. Por exemplo:
+Densidade demográfica
+→ vence o menor valor.
 
- 
+Valores iguais resultam em empate.
 
-Carta 1:
+🛠️ Tecnologias usadas
 
-Estado: A
+Linguagem C
 
-Código: A01
+Estruturas de controle: if-else, switch-case
 
-Nome da Cidade: São Paulo
+Entrada e saída padrão (scanf / printf)
 
-População: 12325000
+✍️ Autor
 
-Área: 1521.11 km²
-
-PIB: 699.28 bilhões de reais
-
-Número de Pontos Turísticos: 50
-
- 
-
-Carta 2:
-
-Estado: B
-
-Código: B02
-
-Nome da Cidade: Rio de Janeiro
-
-População: 6748000
-
-Área: 1200.25 km²
-
-PIB: 300.50 bilhões de reais
-
-Número de Pontos Turísticos: 30    
-
-
-Requisitos funcionais
-
-
-O programa deve ler corretamente os dados de duas cartas do usuário via entrada padrão (teclado).
- 
-O programa deve armazenar os dados lidos em variáveis apropriadas.
- 
-O programa deve exibir os dados de cada carta na tela, formatados de forma clara e organizada, conforme o exemplo acima.
-
-Requisitos não funcionais
-
-
-Usabilidade: O programa deve ser fácil de usar, com instruções claras para o usuário.
- 
-Legibilidade: O código deve ser bem indentado, com comentários explicativos e nomes de variáveis significativos, facilitando a leitura e compreensão.
- 
-Corretude: O programa deve funcionar corretamente, sem erros de compilação ou execução.
-
-Simplificações para o desafio
-
-
-Você só precisa implementar o cadastro e a exibição de duas cartas.
- 
-Neste nível, foque apenas na leitura, armazenamento e exibição das informações. Você não precisa implementar nenhuma lógica de comparação entre as cartas ou qualquer outro recurso adicional.
- 
-Não utilize estruturas de repetição (como for ou while) ou estruturas de decisão (como if ou else). Seu código deve ser uma sequência simples de instruções.
-
-Entregando seu Projeto
-
-
-Desenvolva seu projeto no GitHub: Crie um repositório público no GitHub para o seu projeto. Recomendamos usar o GitHub Codespaces para facilitar o desenvolvimento.
- 
-Crie o arquivo do seu código: No seu repositório, crie um arquivo chamado super_trunfo.c com o seu código C.
- 
-Compile e teste: Compile e teste seu programa localmente para garantir que ele funciona corretamente.
- 
-Faça commit e push: Faça commit das suas alterações e envie (push) para o seu repositório no GitHub.
- 
-Envie o link do repositório: Copie o link do seu repositório no GitHub e envie-o através da plataforma SAVA, seguindo as instruções fornecidas.
+Projeto desenvolvido como exercício acadêmico para prática de programação em C.
