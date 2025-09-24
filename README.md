@@ -76,3 +76,21 @@ Entrada e saída padrão (scanf / printf)
 ✍️ Autor
 
 Projeto desenvolvido como exercício acadêmico para prática de programação em C.
+
+Novo recurso — Comparação por Dois Atributos
+Foi adicionada uma opção de jogo onde o jogador escolhe dois atributos diferentes para comparar as cartas.
+Como funciona
+- O programa exibe um menu com sete atributos numerados.
+- O jogador insere a primeira escolha (atributo 1) e em seguida a segunda escolha (atributo 2).
+- O sistema valida para que atributo1 ≠ atributo2 e mostra mensagem de erro quando são iguais.
+- Cada atributo é comparado individualmente com a regra já existente (densidade demográfica: menor vence; demais: maior vence).
+- Depois das comparações individuais, o programa soma os valores dos dois atributos para cada carta.
+- A carta com a maior soma vence a rodada; somas iguais resultam em Empate.
+O que é exibido ao final
+- Nome das duas cidades (cartas).
+- Nomes dos dois atributos escolhidos.
+- Valores de cada atributo para cada carta.
+- Resultado de cada comparação individual (vencedor ou empate).
+- Soma dos dois atributos para cada carta.
+- Resultado final pela soma (vencedor ou empate)
+
